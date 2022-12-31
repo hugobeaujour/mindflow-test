@@ -1,0 +1,21 @@
+{
+    "name": "updateWorkflow",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "upload": "npm run build && tar -a -c -f index.zip dist/ && aws s3 cp index.zip s3://code-zips-bucket-development/updateWorkflow.zip",
+        "deploy": "npm run upload && aws lambda update-function-code --s3-bucket code-zips-bucket-development --s3-key updateWorkflow.zip --function-name api-updateWorkflow--region eu-west-1",
+        "build": "webpack"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.101",
+        "@types/node": "^18.0.0",
+        "@types/superagent": "^4.1.15",
+        "aws-sdk": "^2.1161.0",
+        "typescript": "^4.7.4"
+    }
+}

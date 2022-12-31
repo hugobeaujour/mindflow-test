@@ -1,0 +1,10 @@
+{
+    "title": "Action",
+    "type": "object",
+    "description": "Inside a workflow",
+    "properties": {
+
+    },
+    "required": [""],
+    "additionalProperties": false
+}

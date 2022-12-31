@@ -1,0 +1,12 @@
+{
+    "title": "Update worklow",
+    "type": "object",
+    "description": "Body to update a workflow",
+    "properties": {
+        "start": {
+            "$ref": "https:////action"
+        }
+    },
+    "required": ["start"],
+    "additionalProperties": false
+}

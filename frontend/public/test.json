@@ -1,0 +1,7 @@
+{
+    "start": {
+        "name": "name",
+        "url": "https://google.fr",
+        "method": "GET"
+    }
+}

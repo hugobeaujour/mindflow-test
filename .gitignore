@@ -1,0 +1,7 @@
+**/node_modules
+**/.terraform*
+dist
+build
+.DS_Store
+*reals*
+**/*.zip
